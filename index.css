@@ -3,11 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #f1f1f1;
-  overflow-x: hidden;
 }
 
 .container {
@@ -150,7 +150,7 @@ h2 {
   justify-content: center;
 }
 
-/* .gallery-section h2 {
+.gallery-section h2 {
   font-size: 56px;
   font-weight: 300;
   margin-bottom: 5px;
@@ -160,16 +160,16 @@ h2 {
 .images div {
   border-radius: 8px;
   overflow: hidden;
-  height: 50px;
-  width: 50px;
+  height: 250px;
+  width: 250px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid #ffffff;
   transition: all ease-in 100ms;
-} */
+}
 
-/* .images div:hover {
+.images div:hover {
   border: 2px solid #ff450050;
 }
 
@@ -195,7 +195,7 @@ h2 {
 
 .gallery-img6 {
   background-image: url("images/image6.jpg");
-} */
+}
 
 .header-text p {
   font-size: 18px;
@@ -249,6 +249,7 @@ h2 {
   border: 1px solid white;
   color: white;
   font-weight: 500;
+  /* white-space: nowrap; */
 }
 .enroll-container .container button:hover {
   background: orangered;
@@ -384,12 +385,17 @@ footer {
   font-weight: 300;
 }
 
+.gallery-section {
+  background-color: white;
+}
+
 .gallery-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* width: 100%; */
   justify-content: center;
+  padding-top: 40px;
   /* margin: 80px auto; */
 }
 
@@ -518,5 +524,21 @@ footer {
   .enroll-container .container button {
     padding: 10px 30px;
     border-radius: 5px;
+  }
+
+  .container {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .images div {
+    /* border-radius: 8px;
+    overflow: hidden; */
+    height: 250px;
+    width: 350px;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #ffffff;
+    transition: all ease-in 100ms; */
   }
 }
